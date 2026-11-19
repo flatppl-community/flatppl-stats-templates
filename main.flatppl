@@ -1,8 +1,9 @@
 %%%
 # Statistical template models
 
-Templates have bins as rows and components as columns. All fitted parameters
-are explicit arguments; constructors return normalized sampling laws.
+$T[N,K]$ maps component strengths $a[K]$ to bins: $f=Ta$.
+Response projection is $p=R(q\odot f)$ for $R[M,N]$ and quadrature weights $q[N]$.
+Observation laws retain their Poisson or Gaussian normalization.
 %%%
 flatppl_compat = "0.1"
 linear = load_module("src/linear.flatppl")
